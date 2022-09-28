@@ -1,0 +1,12 @@
+.navbar{
+    background-color: #4A2545;
+}
+
+.navbar a{
+    color: #fff;
+}
+
+.navbar .btn{
+    background-color: #F0F2A6;
+    color: #000000;
+}

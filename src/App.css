@@ -1,5 +1,6 @@
+/* Navbar Styles */
 .navbar{
-    background-color: #4A2545;
+    background-color: #DC567E;
 }
 
 .navbar a{
@@ -7,6 +8,16 @@
 }
 
 .navbar .btn{
-    background-color: #F0F2A6;
+    background-color: #FCFCFC;
+    color: #000000;
+}
+
+/* Card Styles */
+
+.card-title{
+    color: #DC567E;
+}
+
+.card-text{
     color: #000000;
 }

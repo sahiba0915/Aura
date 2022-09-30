@@ -1,3 +1,9 @@
+:root{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /* Navbar Styles */
 .navbar{
     background-color: #DC567E;
@@ -14,10 +20,20 @@
 
 /* Card Styles */
 
+.card {
+    width: 100%;
+}
+
 .card-title{
     color: #DC567E;
 }
 
 .card-text{
     color: #000000;
+}
+
+/* Products */
+
+.product-contanier{
+    background-color: #FCFCFC;
 }

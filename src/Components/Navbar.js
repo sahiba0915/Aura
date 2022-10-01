@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 const Navbar = () => {
   return (
     <div>
-        <nav className="navbar fixed-top navbar-expand-lg py-3 shadow-lg">
+        <nav className="navbar navbar-expand-lg py-3 shadow-lg">
   <div className="container">
     <NavLink className="navbar-brand fw-bold fs-1" to="/">
     <i className="fa fa-snowflake-o">Aura</i>

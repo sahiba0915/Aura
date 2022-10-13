@@ -6,7 +6,7 @@ import { useAuth0 } from "@auth0/auth0-react";
 const Navbar = () => {
 
   const state = useSelector((state) => state.handleCart);
-  const { loginWithRedirect } = useAuth0();
+  const { loginWithRedirect, logout,isAuthenticated } = useAuth0();
 
 
   return (
@@ -32,9 +32,20 @@ const Navbar = () => {
         </li>
       </ul>
       <div className="buttons">
-        <NavLink to="/login" className="btn btn-outline-dark">
-        <button onClick={() => loginWithRedirect()}>Log In</button>
-        </NavLink>
+        {
+          isAuthenticated ? 
+          (
+          <NavLink to="/login">
+          <button onClick={() => logout({ returnTo: window.location.origin })}>Log Out
+          </button></NavLink> 
+          ): 
+          (      
+          <NavLink to="/login">
+          <button onClick={() => loginWithRedirect()}>Log In</button>
+          </NavLink>
+          )
+        }
+  
 
         <NavLink to="/cart" className="btn btn-outline-dark ms-2">
           <i className="fa fa-cart-plus me-1"> Cart({state.length})</i>
